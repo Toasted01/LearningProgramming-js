@@ -1,14 +1,14 @@
 /*
-* This is used to store all of the ways to 'do' javascript and programming in general using examples.
-*/
+ * This is used to store all of the ways to 'do' javascript and programming in general using examples.
+ */
 
 //Basics
 
 /**
-* Variables
-* const variables cannot be reassigned but can be modified, const should be used for things that cshouldnt change
-* let variables can be reassigned and should be used for things that should change like number of wins
-*/
+ * Variables
+ * const variables cannot be reassigned but can be modified, const should be used for things that cshouldnt change
+ * let variables can be reassigned and should be used for things that should change like number of wins
+ */
 const pi = 3.14;
 let wins = 1;
 
@@ -178,3 +178,49 @@ getRandomArbitrary(0,10);//random number between 0-10 inclusive
 //round
 const roundedNumber = Math.round(pi);
 console.log(roundedNumber);//3
+
+//Errors
+//https://www.w3schools.com/js/js_errors.asp
+
+/**
+ * try/catch
+ * try catch is used when an error could occur so you need to catch the error so it doesnt crash the program
+ * it is writen as such:
+ * try {
+ *   Block of code to try
+ *}
+ *catch(err) {
+ *   Block of code to handle errors
+ *} 
+ */
+try {
+    adddlert("Welcome guest!");//*adddlert is supposed to be alert
+}
+catch(err) {
+    document.getElementById("demo").innerHTML = err.message;
+}
+
+/**
+ * Throw
+ * The throw statement allows you to create a custom error.
+ * Technically you can throw an exception (throw an error).
+ * The exception can be a JavaScript String, a Number, a Boolean or an Object:
+ */
+throw "Too big";    // throw a text
+throw 500;          // throw a number
+
+/**
+ * Finally
+ * The finally keyword is used after try catch in order to perform critical cleanup operations when the program crashes
+ * 
+ */
+let file = openFile("example.txt");
+
+try {
+  // Code that interacts with the file
+} catch (error) {
+  console.error("An error occurred:", error.message);
+} finally {
+  // Ensure the file is always closed
+  closeFile(file);
+}
