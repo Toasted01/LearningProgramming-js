@@ -1,6 +1,7 @@
 # LearningProgramming js
  Important bits of coding knowledge presented in JS.  
  Code bits that are important but cannot be represented in JS will be shown in another language that supports it e.g. types in Typescript.  
+  
  JS Items:  
    * Variables  
       - const  
@@ -12,6 +13,7 @@
       - Calling methods/functions  
       - Spread Parameters  
       - Rest Parameters  
+      - Functions as Variables
    * Conditions  
       - if statements  
       - Switch statements  
@@ -50,6 +52,7 @@ TS Items:
    * Functions
       - Return String  
       - Return Void  
+      - Functions as Variables
    * Enum
    * Objects
    * Aliases

@@ -36,6 +36,16 @@ function voidFunction():void{
     console.log('void')
 }
 
+//Function as Variable
+type StringsToNumberFunction = (arg0: string, arg1: string) => number;
+
+let myFunc: StringsToNumberFunction;
+myFunc = function(firstName: string, lastName: string) {
+  return firstName.length + lastName.length;
+};
+
+myFunc('Tom', 'Burns');// returns 8
+
 /**
  * Enum
  * Enums can be used to create custom types where you want an input to only be 1 of some options
