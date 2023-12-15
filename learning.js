@@ -42,6 +42,14 @@ myFunction2(pi);
 let cLog = console.log;
 cLog('hi');
 
+//Function name
+function exampleFunction() {
+    // Function body
+}
+
+console.log(exampleFunction.name); // Outputs: "exampleFunction"
+
+
 /**
  * ...
  * This can be used for rest parameters and spread parameters
