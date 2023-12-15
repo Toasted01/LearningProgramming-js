@@ -147,6 +147,15 @@ while (i = pi) {
     i + 0.01;
 }
 
+/**
+ * same as a while loop but because the check is done after it guarentees that the code will be ran at least once
+ */
+let counter = 0;
+do {
+    console.log("Counter value:", counter);
+    counter++;
+} while (counter < 5);
+
 //Array
 
 /**

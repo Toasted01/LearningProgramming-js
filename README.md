@@ -18,6 +18,7 @@
    *Loops  
       -For loop  
       -While loop  
+      -do while  
    *Array  
       -Initialising  
       -Accessing  
