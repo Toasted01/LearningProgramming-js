@@ -14,6 +14,7 @@
       - Spread Parameters  
       - Rest Parameters  
       - Functions as Variables
+      - Function names
    * Conditions  
       - if statements  
       - Switch statements  
