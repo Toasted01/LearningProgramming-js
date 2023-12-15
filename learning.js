@@ -13,9 +13,10 @@ const pi = 3.14;
 let wins = 1;
 
 /**
-* Methods/Functions
-* Methods can be declared in 3 ways, the first is using the simple outdated function keyword, and the remaining 2 being ES6 shorthand and arrow function
-*/
+ * Methods/Functions
+ * Methods can be declared in 3 ways, the first is using the simple outdated function keyword, and the remaining 2 being ES6 shorthand and arrow function
+ * Rest parameters can be used when an indefinite number of parameters are expected
+ */
 
 //function keyword
 function myFunction1(int){
@@ -37,6 +38,21 @@ const myFunction2 = (int) =>{
 myFunction1(pi);
 myObject.myMethod(pi);
 myFunction2(pi);
+
+//Rest parameters
+function sum(...theArgs) {
+    let total = 0;
+    for (const arg of theArgs) {
+      total += arg;
+    }
+    return total;
+  }
+  
+  console.log(sum(1, 2, 3));
+  // Expected output: 6
+  
+  console.log(sum(1, 2, 3, 4));
+  // Expected output: 10
 
 //Conditions
 
