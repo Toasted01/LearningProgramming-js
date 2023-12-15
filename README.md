@@ -1,6 +1,7 @@
 # LearningProgramming js
- Important bits of coding knowledge presented in js  
- Items:  
+ Important bits of coding knowledge presented in JS.  
+ Code bits that are important but cannot be represented in JS will be shown in another language that supports it e.g. types in Typescript.  
+ JS Items:  
    * Variables  
       - const  
       - let  
@@ -38,3 +39,17 @@
       - try/catch  
       - Throw
       - Finally
+
+TS Items:  
+   * Common types  
+   * Variables  
+      - Basic String Var  
+      - Array  
+      - Fixed Array  
+      - Tuple  
+   * Functions
+      - Return String  
+      - Return Void  
+   * Enum
+   * Objects
+   * Aliases
