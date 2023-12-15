@@ -15,7 +15,6 @@ let wins = 1;
 /**
  * Methods/Functions
  * Methods can be declared in 3 ways, the first is using the simple outdated function keyword, and the remaining 2 being ES6 shorthand and arrow function
- * Rest parameters can be used when an indefinite number of parameters are expected
  */
 
 //function keyword
@@ -38,6 +37,26 @@ const myFunction2 = (int) =>{
 myFunction1(pi);
 myObject.myMethod(pi);
 myFunction2(pi);
+
+/**
+ * ...
+ * This can be used for rest parameters and spread parameters
+ * Spread parameters allows an array to be spread into its individual elements
+ * rest parameters takes multiple individual elements and condenses them into a single element
+ */
+
+//Spread Parameters
+function sum(x, y, z) {
+    return x + y + z;
+  }
+  
+  const numbers2 = [1, 2, 3];
+  
+  console.log(sum(...numbers2));
+  // Expected output: 6
+  
+  console.log(sum.apply(null, numbers2));
+  // Expected output: 6  
 
 //Rest parameters
 function sum(...theArgs) {
