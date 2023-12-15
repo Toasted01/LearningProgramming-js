@@ -38,6 +38,10 @@ myFunction1(pi);
 myObject.myMethod(pi);
 myFunction2(pi);
 
+//Functions as Variables
+let cLog = console.log;
+cLog('hi');
+
 /**
  * ...
  * This can be used for rest parameters and spread parameters
