@@ -85,6 +85,7 @@ switch (pi){
  */
 let result = (pi=3.14 ? console.log('is pi') : console.log('not pi'))
 console.log(result);
+
 //Loops
 
 /**
